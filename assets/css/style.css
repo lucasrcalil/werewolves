@@ -113,6 +113,7 @@ body a {
 }
 
 .inside-block-vert {
+  overflow: hidden;
   position: absolute;
   background-image: url(../images/block-vert.png);
   background-size: cover;
