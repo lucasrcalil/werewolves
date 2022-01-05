@@ -232,6 +232,7 @@ body a {
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  opacity: 1;
 }
 
 .player-photo img {
@@ -504,6 +505,25 @@ i {
   margin-bottom: 0;
 }
 
+.menu-mobile {
+  width: 100vw;
+  height: 90px;
+  background-color: #fff;
+  display: none;
+}
+
 a {
   cursor: pointer;
+}
+
+@media screen and (max-width: 1230px) {
+}
+
+@media screen and (max-width: 992px) {
+  .header-content {
+    display: none;
+  }
+  .vertical-line {
+    display: none;
+  }
 }
