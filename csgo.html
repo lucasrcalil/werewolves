@@ -8,7 +8,7 @@
       href="assets/images/favicon.ico"
       type="image/x-icon"
     />
-    <title>Somos da Matilha | Werewolves</title>
+    <title>Lines | Werewolves</title>
 
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap");
@@ -28,16 +28,6 @@
 
   <!-- Body -->
   <body>
-    <div class="intro">
-      <div class="intro-content">
-        <img class="fade-in tooth" src="./assets/images/tooth.svg" alt="" />
-        <img
-          class="fade-in werewolves display-none"
-          src="./assets/images/werewolves.svg"
-          alt=""
-        />
-      </div>
-    </div>
     <!-- Header -->
     <header>
       <div class="header">
@@ -202,107 +192,53 @@
 
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12 matilha"></div>
         <div class="col-12 lineup-title">
-          <h1>Acesso rápido</h1>
-          <p>Rush todas as páginas de forma fácil e ágil!</p>
+          <a onclick="history.back()">
+            <div class="col-1 back-button">
+              <i class="ph-arrow-left"></i>
+              <p>Voltar</p>
+            </div>
+          </a>
+          <h1>Modalidades</h1>
         </div>
-        <div class="col-12 col-md-6 col-xl-4 home-block inactive">
-          <a href="lines.html">
+        <div class="col-12 col-xl-6 col-lg-6 block inactive">
+          <a href="csgo-masc.html">
             <div class="inside-block">
-              <div class="page-photo">
-                <img src="assets/images/home-lines.jpg" alt="" />
-              </div>
               <div class="block-content">
-                <div class="text-games">
-                  <h1>Lines</h1>
+                <div class="tag">
+                  <p>Masculina</p>
                 </div>
-                <button class="box-button">Acessar</button>
+                <div class="text">
+                  <h1>CS:GO</h1>
+                </div>
+                <button class="box-button">Ver Jogadores</button>
+              </div>
+              <div class="player-photo">
+                <img src="assets/images/player.png" alt="Player" />
               </div>
             </div>
           </a>
         </div>
-        <div class="col-12 col-md-6 col-xl-4 home-block inactive">
-          <a href="titles.html">
-            <div class="inside-block">
-              <div class="page-photo">
-                <img src="assets/images/home-trophies.jpg" alt="" />
+        <div class="col-12 col-xl-6 col-lg-6 block inactive">
+          <div class="inside-block">
+            <div class="block-content">
+              <div class="tag">
+                <p>Feminina</p>
               </div>
-              <div class="block-content">
-                <div class="text-games">
-                  <h1>Títulos</h1>
-                </div>
-                <button class="box-button">Acessar</button>
+              <div class="text">
+                <h1>CS:GO</h1>
               </div>
+              <button class="box-button">Ver Jogadores</button>
             </div>
-          </a>
-        </div>
-        <div class="col-12 col-md-6 col-xl-4 home-block inactive">
-          <a href="streamers.html">
-            <div class="inside-block">
-              <div class="page-photo">
-                <img src="assets/images/home-streamers.jpg" alt="" />
-              </div>
-              <div class="block-content">
-                <div class="text-games">
-                  <h1>Streamers</h1>
-                </div>
-                <button class="box-button">Acessar</button>
-              </div>
+            <div class="player-photo">
+              <img src="assets/images/player1.png" alt="Player" />
             </div>
-          </a>
-        </div>
-        <div class="col-12 col-md-6 col-xl-4 home-block inactive">
-          <a href="partners.html">
-            <div class="inside-block">
-              <div class="page-photo">
-                <img src="assets/images/home-partners.jpg" alt="" />
-              </div>
-              <div class="block-content">
-                <div class="text-games">
-                  <h1>Parceiros</h1>
-                </div>
-                <button class="box-button">Acessar</button>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-12 col-md-6 col-xl-4 home-block inactive">
-          <a href="products.html">
-            <div class="inside-block">
-              <div class="page-photo">
-                <img src="assets/images/home-products.png" alt="" />
-              </div>
-              <div class="block-content">
-                <div class="text-games">
-                  <h1>Produtos</h1>
-                </div>
-                <button class="box-button">Acessar</button>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-12 col-md-6 col-xl-4 home-block inactive">
-          <a href="about.html">
-            <div class="inside-block">
-              <div class="page-photo">
-                <img src="assets/images/home-about.jpg" alt="" />
-              </div>
-              <div class="block-content">
-                <div class="text-games">
-                  <h1>Quem somos</h1>
-                </div>
-                <button class="box-button">Acessar</button>
-              </div>
-            </div>
-          </a>
+          </div>
         </div>
       </div>
     </div>
 
-    <script src="./assets/js/app.js"></script>
-    <script src="./assets/js/players-card.js"></script>
-    <script src="./assets/js/hamburguer.js"></script>
+    <script src="assets/js/players-card.js"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
