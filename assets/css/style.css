@@ -629,7 +629,6 @@ i {
 }
 
 .hamburguer-button {
-  margin-right: 30px;
   display: flex;
   align-items: center;
 }
@@ -670,11 +669,12 @@ a {
   }
 
   .matilha {
-    height: 120px;
+    height: 110px;
   }
 
   .menu-mobile {
     display: flex;
+    align-items: center;
   }
 }
 
@@ -697,6 +697,6 @@ a {
 
 @media screen and (max-width: 500px) {
   .text-games h1 {
-    font-size: 26px;
+    font-size: 22px;
   }
 }
