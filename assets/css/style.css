@@ -151,8 +151,59 @@ body a {
   background-clip: content-box;
 }
 
+.block-vert-titles {
+  bottom: 0;
+  opacity: 1;
+  background: linear-gradient(
+    93.19deg,
+    #282935 11.79%,
+    #6a6b79 51.1%,
+    #282935 102.57%
+  );
+  height: 336px;
+  border-radius: 38px;
+  margin-top: 30px;
+  background-position: center center;
+  position: relative;
+  background-clip: content-box;
+  transition: ease-in-out 1s;
+}
+
+.block-vert-titles.inactive {
+  bottom: -40;
+  opacity: 0;
+  background: linear-gradient(
+    93.19deg,
+    #282935 11.79%,
+    #6a6b79 51.1%,
+    #282935 102.57%
+  );
+  height: 336px;
+  border-radius: 38px;
+  margin-top: 30px;
+  background-position: center center;
+  position: relative;
+  background-clip: content-box;
+  transition: ease-in-out 1s;
+}
+
 .inside-block-vert {
   overflow: hidden;
+  position: absolute;
+  background-image: url(../images/block-vert.png);
+  background-size: cover;
+  width: calc(100% - 0.2rem);
+  height: calc(100% - 0.2rem);
+  border-radius: 38px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  background-clip: content-box;
+}
+
+.inside-block-vert-champ {
   position: absolute;
   background-image: url(../images/block-vert.png);
   background-size: cover;
@@ -178,6 +229,14 @@ body a {
   width: 100%;
 }
 
+.block-content-vert-champ {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+  width: 100%;
+}
+
 .player-photo-vert {
   margin-top: 15px;
   width: 100%;
@@ -186,6 +245,20 @@ body a {
 }
 
 .player-photo-vert img {
+  max-height: 100%;
+  max-width: 100%;
+  filter: drop-shadow(20px 5px 3px rgba(0, 0, 0, 0.15));
+  z-index: -9999;
+}
+
+.trophy-photo-vert {
+  margin-top: -49px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.trophy-photo-vert img {
   max-height: 100%;
   max-width: 100%;
   filter: drop-shadow(20px 5px 3px rgba(0, 0, 0, 0.15));
@@ -204,7 +277,29 @@ body a {
   font-size: 28px;
 }
 
+.text-vert-champion {
+  padding-bottom: 0px;
+  margin-top: 15px;
+}
+
+.text-vert-champion h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 28px;
+}
+
 .player-name p {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 50%;
+  margin-top: 0px;
+  text-transform: uppercase;
+}
+
+.camp-name p {
   font-family: "Montserrat", sans-serif;
   color: #fff;
   font-size: 14px;
@@ -217,6 +312,16 @@ body a {
   font-family: "Montserrat", sans-serif;
   color: #fff;
   font-size: 14px;
+  letter-spacing: 50%;
+  margin-top: 0px;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+
+.camp-date p {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-size: 16px;
   letter-spacing: 50%;
   margin-top: 0px;
   text-transform: uppercase;
@@ -238,6 +343,25 @@ body a {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 12px;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0px;
+}
+
+.tag-game {
+  background-color: var(--primary);
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  border-radius: 100px;
+  margin-bottom: 15px;
+}
+
+.tag-game p {
+  color: #fff;
+  padding: 5px 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
   letter-spacing: 0.1rem;
   margin-bottom: 0px;
 }
@@ -629,7 +753,6 @@ i {
 }
 
 .hamburguer-button {
-  margin-right: 30px;
   display: flex;
   align-items: center;
 }
@@ -642,7 +765,7 @@ i {
 }
 
 .header-logo-mobile {
-  padding-left: 30px;
+  margin-left: 20px;
   display: flex;
   align-items: center;
 }
@@ -670,11 +793,12 @@ a {
   }
 
   .matilha {
-    height: 120px;
+    height: 110px;
   }
 
   .menu-mobile {
     display: flex;
+    align-items: center;
   }
 }
 
@@ -697,6 +821,6 @@ a {
 
 @media screen and (max-width: 500px) {
   .text-games h1 {
-    font-size: 26px;
+    font-size: 22px;
   }
 }
