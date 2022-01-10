@@ -461,7 +461,7 @@ body a {
   height: 100%;
   border-radius: 30px;
   object-fit: cover;
-  opacity: 0.05;
+  opacity: 0.2;
   filter: grayscale(1);
 }
 
