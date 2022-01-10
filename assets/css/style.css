@@ -158,6 +158,24 @@ body a {
 
 .block-vert-streamers.inactive {
   bottom: -40;
+  opacity: 0;
+  transition: ease-in-out 1s;
+  background: linear-gradient(
+    93.19deg,
+    #282935 11.79%,
+    #6a6b79 51.1%,
+    #282935 102.57%
+  );
+  height: 460px;
+  border-radius: 38px;
+  margin-top: 30px;
+  background-position: center center;
+  position: relative;
+  background-clip: content-box;
+}
+
+.block-vert-streamers {
+  bottom: 0;
   opacity: 1;
   transition: ease-in-out 1s;
   background: linear-gradient(
@@ -166,7 +184,7 @@ body a {
     #6a6b79 51.1%,
     #282935 102.57%
   );
-  height: 560px;
+  height: 460px;
   border-radius: 38px;
   margin-top: 30px;
   background-position: center center;
@@ -318,11 +336,11 @@ body a {
   overflow: hidden;
   background-clip: content-box;
   background-repeat: no-repeat;
-  margin-top: 30px;
+  margin-top: 15px;
   margin-bottom: 30px;
-  width: calc(100% - 60px);
+  width: calc(100% - 30px);
   background-size: cover;
-  height: 270px;
+  height: 200px;
   display: flex;
   justify-content: center;
   border-radius: 30px;
