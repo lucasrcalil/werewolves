@@ -906,6 +906,12 @@ i {
   align-items: center;
 }
 
+.back-button:hover i {
+  color: var(--orange);
+  display: flex;
+  align-items: center;
+}
+
 .back-button p {
   padding-left: 5px;
   display: flex;
