@@ -1000,4 +1000,20 @@ a {
   .text-games h1 {
     font-size: 22px;
   }
+  .werewolves {
+    position: absolute;
+    max-width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .werewolves.display-none {
+    display: none;
+    z-index: -999999999;
+    position: absolute;
+    max-width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
