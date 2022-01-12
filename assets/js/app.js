@@ -40,3 +40,17 @@ if (sessionStorage.getItem("firstVisit") == null) {
     }, 0);
   });
 }
+
+// document.getElementsByClassName("hamburguer-button")[0].onclick = function () {
+//   var element = document.querySelector(".menu-container");
+//   element.classList.remove("inactive");
+// };
+
+document.getElementsByClassName("hamburguer-button").onclick = function () {
+  var menu = document.getElementsByClassName("menu-container");
+  if (menu.style.display === "none") {
+    menu.style.display = "block";
+  } else {
+    menu.style.display = "none";
+  }
+};
