@@ -192,6 +192,42 @@ body a {
   background-clip: content-box;
 }
 
+.block-vert-partners.inactive {
+  bottom: -40;
+  opacity: 0;
+  transition: ease-in-out 1s;
+  background: linear-gradient(
+    93.19deg,
+    #282935 11.79%,
+    #6a6b79 51.1%,
+    #282935 102.57%
+  );
+  height: 540px;
+  border-radius: 38px;
+  margin-top: 30px;
+  background-position: center center;
+  position: relative;
+  background-clip: content-box;
+}
+
+.block-vert-partners {
+  bottom: 0;
+  opacity: 1;
+  transition: ease-in-out 1s;
+  background: linear-gradient(
+    93.19deg,
+    #282935 11.79%,
+    #6a6b79 51.1%,
+    #282935 102.57%
+  );
+  height: 540px;
+  border-radius: 38px;
+  margin-top: 30px;
+  background-position: center center;
+  position: relative;
+  background-clip: content-box;
+}
+
 .block-vert-titles {
   bottom: 0;
   opacity: 1;
@@ -347,6 +383,33 @@ body a {
   filter: drop-shadow(20px 5px 3px rgba(0, 0, 0, 0.15));
 }
 
+.partners-photo-vert {
+  margin-top: 15px;
+  width: calc(100% - 60px);
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  border-radius: 30px;
+  align-items: center;
+}
+
+.partners-photo-vert img {
+  width: 100%;
+  height: fit-content;
+  filter: drop-shadow(20px 5px 3px rgba(0, 0, 0, 0.15));
+}
+
+.partner-desc p {
+  color: white;
+  padding: 0px 20px;
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+.partner-desc span {
+  font-weight: bold;
+}
+
 .text-vert {
   padding-bottom: 0px;
 }
@@ -378,6 +441,19 @@ body a {
 }
 
 .text-vert-streamers h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+.partner-name {
+  padding-bottom: 0px;
+  margin-top: 15px;
+}
+
+.partner-name h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   color: #fff;
@@ -636,6 +712,22 @@ body a {
   transition: ease-in-out 200ms;
 }
 
+.partner-button {
+  background-color: var(--blue);
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: ease-in-out 200ms;
+  margin-top: 20px;
+}
+
 .button {
   background-color: var(--blue);
   font-family: "Montserrat", sans-serif;
@@ -677,6 +769,12 @@ body a {
 }
 
 .box-button:hover {
+  background-color: #57afff;
+  box-shadow: 0px 4px 14px rgba(13, 130, 236, 0.8);
+  transition: ease-in-out 200ms;
+}
+
+.partner-button:hover {
   background-color: #57afff;
   box-shadow: 0px 4px 14px rgba(13, 130, 236, 0.8);
   transition: ease-in-out 200ms;
