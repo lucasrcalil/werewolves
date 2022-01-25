@@ -54,3 +54,12 @@ document.getElementsByClassName("hamburguer-button").onclick = function () {
     menu.style.display = "none";
   }
 };
+
+const btnMobile = document.getElementsByClassName("hamburguer-button");
+
+function toggleMenu() {
+  const nav = document.querySelector(".menu-container");
+  nav.classList.toggle("active");
+}
+
+btnMobile.addEventListener("click", toggleMenu);
