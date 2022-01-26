@@ -1116,7 +1116,7 @@ i {
   position: absolute;
   background-color: var(--primary);
   z-index: 1;
-  transition: all 0.3s;
+  transition: all 0.6s;
 }
 
 .menu-container.active {
@@ -1127,7 +1127,7 @@ i {
   position: absolute;
   background-color: var(--primary);
   z-index: 1;
-  transition: all 0.3s;
+  transition: all 0.6s;
 }
 
 a {
