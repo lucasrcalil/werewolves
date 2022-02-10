@@ -713,6 +713,37 @@ body a {
   transition: ease-in-out 200ms;
 }
 
+.box-button.inactive {
+  background-color: #bdbdbd;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: #828282;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: ease-in-out 200ms;
+}
+
+.box-button.inactive:hover {
+  background-color: #bdbdbd;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: #828282;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: ease-in-out 200ms;
+  box-shadow: none;
+}
+
 .partner-button {
   background-color: var(--blue);
   font-family: "Montserrat", sans-serif;
