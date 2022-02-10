@@ -34,6 +34,10 @@ hr {
   position: fixed;
 }
 
+.att {
+  display: none;
+}
+
 .cupom-content {
   display: flex;
   justify-content: center;
