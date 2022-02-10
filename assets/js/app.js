@@ -60,6 +60,8 @@ const btnMobile = document.getElementsByClassName("hamburguer-button");
 function toggleMenu() {
   const nav = document.querySelector(".menu-container");
   nav.classList.toggle("active");
+  const body = document.querySelector(".relative-position");
+  body.classList.toggle("fixed-position");
 }
 
 btnMobile.addEventListener("click", toggleMenu);

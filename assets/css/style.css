@@ -14,6 +14,50 @@ body a {
   src: url(../fonts/edosz.ttf) format("truetype");
 }
 
+hr {
+  border: 1px solid;
+  border-color: #818191;
+  width: 100%;
+}
+
+.cupom-box {
+  background-color: #1d232a;
+  width: calc(100% - 1.2rem);
+  border-radius: 15px;
+}
+
+.relative-position {
+  position: relative;
+}
+
+.fixed-position {
+  position: fixed;
+}
+
+.cupom-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-family: Montserrat, sans-serif;
+  margin-top: 0.6rem;
+  text-align: center;
+}
+
+.cupom-title {
+  display: flex;
+  color: #828282;
+  font-family: Montserrat, sans-serif;
+  font-size: 15px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.8rem;
+}
+
+.cupom-title p {
+  margin: 0rem 0rem 0rem 0.3rem;
+}
+
 .header-content {
   position: absolute;
   background-color: var(--primary);
@@ -442,19 +486,6 @@ body a {
 }
 
 .text-vert-streamers h1 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 900;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 22px;
-}
-
-.partner-name {
-  padding-bottom: 0px;
-  margin-top: 15px;
-}
-
-.partner-name h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   color: #fff;
