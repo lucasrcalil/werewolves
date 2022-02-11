@@ -965,7 +965,7 @@ i {
 }
 
 .lineup-title {
-  margin-top: 90px;
+  margin-top: 45px;
 }
 
 .lineup-title h1 {
@@ -1033,7 +1033,7 @@ i {
 }
 
 .about-banner {
-  margin-top: 90px;
+  margin-top: 45px;
   height: 221px;
   display: flex;
   justify-content: center;
@@ -1051,9 +1051,14 @@ i {
 .about-banner-title {
   font-family: Edo SZ;
   text-transform: uppercase;
-  font-size: 50px;
   color: #ffffff;
   position: absolute;
+  z-index: 99;
+  text-align: center;
+}
+
+.about-banner-title h1 {
+  font-size: 60px;
 }
 
 .about-banner-character-1 {
@@ -1236,6 +1241,61 @@ i {
   background-color: var(--primary);
   z-index: 1;
   transition: all 0.6s;
+}
+
+.ab-first-content {
+  margin-top: 60px;
+  padding-left: 45px;
+}
+
+.ab-first-image {
+  height: 560px;
+  margin-top: 60px;
+}
+
+.ab-first-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: cover cover;
+  border-radius: 30px;
+}
+
+.ab-first-title {
+  color: #ffffff;
+  font-family: Edo SZ;
+  text-transform: uppercase;
+}
+
+.ab-first-title h1 {
+  font-size: 72px;
+  line-height: 4rem;
+}
+
+.ab-first-title span {
+  background-image: url(/assets/images/title-bg.svg);
+  background-position: center center;
+  background-size: 100%;
+}
+
+.ab-first-text {
+  color: #ffffff;
+  font-family: Montserrat, sans-serif;
+  font-size: 17px;
+  line-height: 2.1rem;
+  margin-top: 30px;
+}
+
+.ab-first-text br {
+  margin: 0px;
+}
+
+.ab-first-text span {
+  color: #ffffff;
+  font-family: Montserrat, sans-serif;
+  font-size: 17px;
+  line-height: 1rem;
+  font-weight: 700;
 }
 
 a {
