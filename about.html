@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+  <!-- Head -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Sobre | Werewolves</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap");
+    </style>
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/variables.css" />
+    <link rel="stylesheet" href="assets/css/hamburguer.css" />
+  </head>
+  <!-- Head -->
+
+  <!-- Body -->
+  <body class="relative-position">
+    <div class="intro">
+      <div class="intro-content">
+        <img class="fade-in tooth" src="./assets/images/tooth.svg" alt="" />
+        <img
+          class="fade-in werewolves display-none"
+          src="./assets/images/werewolves.svg"
+          alt=""
+        />
+      </div>
+    </div>
+    <!-- Header -->
+    <header>
+      <div class="header">
+        <div class="vertical-line"></div>
+        <div class="header-content">
+          <div class="header-logo">
+            <a href="index.html">
+              <img src="assets/images/logo.svg" alt="Werewolves" />
+            </a>
+          </div>
+          <div class="button-group">
+            <div class="button-group-1">
+              <div class="header-button">
+                <a href="index.html">
+                  <div class="button-container">
+                    <i class="ph-house-line-fill icon"></i>
+                  </div>
+                  <p class="item-name">Home</p>
+                </a>
+              </div>
+              <div class="header-button">
+                <a href="lines.html">
+                  <div class="button-container">
+                    <i class="ph-users-three-fill"></i>
+                  </div>
+                  <p class="item-name">Lines</p>
+                </a>
+              </div>
+              <div class="header-button">
+                <a href="titles.html">
+                  <div class="button-container">
+                    <i class="ph-trophy-fill"></i>
+                  </div>
+                  <p class="item-name">Títulos</p>
+                </a>
+              </div>
+              <div class="header-button">
+                <a href="streamers.html">
+                  <div class="button-container">
+                    <i class="ph-video-camera-fill"></i>
+                  </div>
+                  <p class="item-name">Streamers</p>
+                </a>
+              </div>
+              <div class="header-button">
+                <a href="partners.html">
+                  <div class="button-container">
+                    <i class="ph-handshake-fill"></i>
+                  </div>
+                  <p class="item-name">Parceiros</p>
+                </a>
+              </div>
+              <div class="header-button">
+                <a href="products.html">
+                  <div class="button-container">
+                    <i class="ph-bag-fill"></i>
+                  </div>
+                  <p class="item-name">Produtos</p>
+                </a>
+              </div>
+              <div class="header-button">
+                <a href="about.html">
+                  <div class="button-container">
+                    <i class="ph-info-fill"></i>
+                  </div>
+                  <p class="item-name">Quem somos</p>
+                </a>
+              </div>
+            </div>
+
+            <div class="button-group-2">
+              <div class="header-button">
+                <a
+                  href="https://www.instagram.com/werewolves_org"
+                  target="blank"
+                >
+                  <div class="button-container">
+                    <i class="ph-instagram-logo-fill"></i>
+                  </div>
+                  <p class="item-name">Instagram</p>
+                </a>
+                <a
+                  href="https://www.youtube.com/channel/UCJocLpLeJv_FOdu6vUR2Fzg"
+                  target="blank"
+                >
+                  <div class="button-container">
+                    <i class="ph-youtube-logo-fill"></i>
+                  </div>
+                  <p class="item-name">Youtube</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header-Mobile -->
+    <header class="menu-mobile">
+      <a href="index.html">
+        <div class="header-logo-mobile">
+          <img src="assets/images/logo.svg" alt="" />
+        </div>
+      </a>
+      <div class="hamburguer-button" onclick="toggleMenu()">
+        <svg>
+          <defs>
+            <filter id="gooeyness">
+              <feGaussianBlur
+                in="SourceGraphic"
+                stdDeviation="2.2"
+                result="blur"
+              />
+              <feColorMatrix
+                in="blur"
+                mode="matrix"
+                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10"
+                result="gooeyness"
+              />
+              <feComposite in="SourceGraphic" in2="gooeyness" operator="atop" />
+            </filter>
+          </defs>
+        </svg>
+        <div class="plates">
+          <div class="plate plate2" onclick="this.classList.toggle('active')">
+            <svg
+              class="burger"
+              version="1.1"
+              height="100"
+              width="100"
+              viewBox="0 0 100 100"
+            >
+              <path
+                class="line line1"
+                d="M 50,65 H 70 C 70,65 75,65.198488 75,70.762712 C 75,73.779026 74.368822,78.389831 66.525424,78.389831 C 22.092231,78.389831 -18.644068,-30.508475 -18.644068,-30.508475"
+              />
+              <path
+                class="line line2"
+                d="M 50,35 H 70 C 70,35 81.355932,35.300135 81.355932,25.635593 C 81.355932,20.906215 78.841706,14.830508 72.881356,14.830508 C 35.648232,14.830508 -30.508475,84.322034 -30.508475,84.322034"
+              />
+              <path
+                class="line line3"
+                d="M 50,50 H 30 C 30,50 12.288136,47.749959 12.288136,60.169492 C 12.288136,67.738339 16.712974,73.305085 40.677966,73.305085 C 73.791674,73.305085 108.47458,-19.915254 108.47458,-19.915254"
+              />
+              <path
+                class="line line4"
+                d="M 50,50 H 70 C 70,50 81.779661,50.277128 81.779661,36.607372 C 81.779661,28.952694 77.941689,25 69.067797,25 C 39.95532,25 -16.949153,119.91525 -16.949153,119.91525"
+              />
+              <path
+                class="line line5"
+                d="M 50,65 H 30 C 30,65 17.79661,64.618439 17.79661,74.152543 C 17.79661,80.667556 25.093813,81.355932 38.559322,81.355932 C 89.504001,81.355932 135.59322,-21.186441 135.59322,-21.186441"
+              />
+              <path
+                class="line line6"
+                d="M 50,35 H 30 C 30,35 16.525424,35.528154 16.525424,24.152542 C 16.525424,17.535987 22.597755,13.559322 39.40678,13.559322 C 80.617882,13.559322 94.067797,111.01695 94.067797,111.01695"
+              />
+            </svg>
+            <svg
+              class="x"
+              version="1.1"
+              height="100"
+              width="100"
+              viewBox="0 0 100 100"
+            >
+              <path class="line" d="M 34,32 L 66,68" />
+              <path class="line" d="M 66,32 L 34,68" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header-Mobile -->
+
+    <!-- Menu Mobile -->
+    <div class="menu-container">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 lineup-title">
+            <h1>Menu</h1>
+          </div>
+          <div class="col-12 button-group-mobile">
+            <div class="col-12 button-group-mobile-content">
+              <div class="col-4 header-button">
+                <a href="index.html">
+                  <div class="button-container">
+                    <i class="ph-house-line-fill icon"></i>
+                  </div>
+                  <p class="item-name">Home</p>
+                </a>
+              </div>
+              <div class="col-4 header-button">
+                <a href="lines.html">
+                  <div class="button-container">
+                    <i class="ph-users-three-fill"></i>
+                  </div>
+                  <p class="item-name">Lines</p>
+                </a>
+              </div>
+              <div class="col-4 header-button">
+                <a href="titles.html">
+                  <div class="button-container">
+                    <i class="ph-trophy-fill"></i>
+                  </div>
+                  <p class="item-name">Títulos</p>
+                </a>
+              </div>
+              <div class="col-4 header-button">
+                <a href="streamers.html">
+                  <div class="button-container">
+                    <i class="ph-video-camera-fill"></i>
+                  </div>
+                  <p class="item-name">Streamers</p>
+                </a>
+              </div>
+              <div class="col-4 header-button">
+                <a href="partners.html">
+                  <div class="button-container">
+                    <i class="ph-handshake-fill"></i>
+                  </div>
+                  <p class="item-name">Parceiros</p>
+                </a>
+              </div>
+              <div class="col-4 header-button">
+                <a href="products.html">
+                  <div class="button-container">
+                    <i class="ph-bag-fill"></i>
+                  </div>
+                  <p class="item-name">Produtos</p>
+                </a>
+              </div>
+              <div class="col-4 header-button">
+                <a href="about.html">
+                  <div class="button-container">
+                    <i class="ph-info-fill"></i>
+                  </div>
+                  <p class="item-name">Quem somos</p>
+                </a>
+              </div>
+              <div class="col-4 header-button">
+                <a
+                  href="https://www.youtube.com/channel/UCJocLpLeJv_FOdu6vUR2Fzg"
+                  target="blank"
+                >
+                  <div class="button-container">
+                    <i class="ph-youtube-logo-fill"></i>
+                  </div>
+                  <p class="item-name">Youtube</p>
+                </a>
+              </div>
+                <div class="col-4 header-button">
+                  <a
+                    href="https://www.instagram.com/werewolves_org"
+                    target="blank"
+                  >
+                    <div class="button-container">
+                      <i class="ph-instagram-logo-fill"></i>
+                    </div>
+                    <p class="item-name">Instagram</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Header -->
+
+    <div class="container-fluid">
+      <div class="row">
+        <a onclick="history.back()">
+          <div class="col-1 back-button">
+            <i class="ph-arrow-left"></i>
+            <p>Voltar</p>
+          </div>
+        </a>
+        <div class="col-12 about-banner">
+          <div class="about-banner-title">
+            <h1>Conheça mais
+              sobre quem somos!</h1>
+          </div>
+          <div class="about-banner-character-1">
+            <img src="/assets/images/about-1.png  " alt="">
+          </div>
+          <div class="about-banner-character-2">
+            <img src="/assets/images/about-2.png  " alt="">
+          </div>
+          <img src="/assets/images/about.svg" alt="">
+        </div>
+        
+      </div>
+    </div>
+
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/players-card.js"></script>
+    <script src="./assets/js/hamburguer.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <!-- Body -->
+</html>
