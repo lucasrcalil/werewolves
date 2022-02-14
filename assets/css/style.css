@@ -444,7 +444,6 @@ hr {
 
 .partners-photo-vert img {
   width: 100%;
-  height: fit-content;
   filter: drop-shadow(20px 5px 3px rgba(0, 0, 0, 0.15));
 }
 
@@ -1416,7 +1415,7 @@ a {
     text-transform: uppercase;
     font-family: Edo SZ;
     text-align: center;
-    font-size: 56fstpx;
+    font-size: 56px;
     margin-top: -70px;
   }
 }
