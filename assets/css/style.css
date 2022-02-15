@@ -1307,6 +1307,8 @@ i {
   align-items: center;
   border-radius: 30px;
   flex-direction: column;
+  --bs-gutter-x: 0rem;
+  --bs-gutter-y: 0;
 }
 
 .directors {
@@ -1316,7 +1318,7 @@ i {
   justify-content: center;
 }
 
-.director-title h1 {
+.director-title {
   color: #ffffff;
   font-family: Edo SZ;
   text-transform: uppercase;
