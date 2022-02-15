@@ -1297,6 +1297,60 @@ i {
   font-weight: 700;
 }
 
+.director-sessions {
+  margin-top: 60px;
+  background-color: #232a32;
+  width: 100%;
+  height: 1000px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  flex-direction: column;
+}
+
+.directors {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.director-title h1 {
+  color: #ffffff;
+  font-family: Edo SZ;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+}
+
+.director-title h1 spam {
+  color: #ffffff;
+  font-family: Edo SZ;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  background-image: url(/assets/images/title-bg.svg);
+  background-position: center center;
+  background-size: 100%;
+}
+
+.director-text {
+  color: #ffffff;
+  font-family: Montserrat, sans-serif;
+  font-size: 17px;
+  line-height: 2.1rem;
+  margin-top: 30px;
+}
+
+.director-text spam {
+  color: #ffffff;
+  font-family: Montserrat, sans-serif;
+  font-size: 17px;
+  line-height: 1rem;
+  font-weight: 700;
+}
+
 a {
   cursor: pointer;
 }
