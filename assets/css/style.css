@@ -1184,6 +1184,10 @@ i {
   align-items: center;
 }
 
+.d-session-container {
+  padding: 60px;
+}
+
 .button-group {
   height: 100vh;
   display: flex;
@@ -1301,7 +1305,6 @@ i {
   margin-top: 60px;
   background-color: #232a32;
   width: 100%;
-  height: 1000px;
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -1343,6 +1346,7 @@ i {
   font-size: 17px;
   line-height: 2.1rem;
   margin-top: 30px;
+  text-align: center;
 }
 
 .director-text spam {
@@ -1351,6 +1355,10 @@ i {
   font-size: 17px;
   line-height: 1rem;
   font-weight: 700;
+}
+
+.space-between {
+  margin-right: 30px;
 }
 
 a {
