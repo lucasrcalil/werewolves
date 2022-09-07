@@ -1529,6 +1529,19 @@ a {
   .error-image img {
     width: 50%;
   }
+  .about-banner-character-1 {
+    display: none;
+  }
+
+  .about-banner-character-2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .ab-first-title {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -1578,6 +1591,9 @@ a {
     text-align: -webkit-center;
     margin-top: 30px;
   }
+  .about-banner-title h1 {
+    font-size: 40px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1605,6 +1621,11 @@ a {
     text-align: center;
     font-size: 72px;
     margin-top: -70px;
+  }
+  .ab-first-title h1 {
+    text-align: center;
+    font-size: 44px;
+    line-height: 3rem;
   }
 }
 
