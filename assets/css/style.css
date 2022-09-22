@@ -442,6 +442,16 @@ hr {
   align-items: center;
 }
 
+.about-content {
+  transition: ease-in-out 0.5s;
+}
+
+.about-content.inactive {
+  opacity: 0;
+  padding-top: 45px;
+  transition: ease-in-out 0.5s;
+}
+
 .partners-photo-vert img {
   width: 100%;
   filter: drop-shadow(20px 5px 3px rgba(0, 0, 0, 0.15));
@@ -541,6 +551,29 @@ hr {
   width: fit-content;
   border-radius: 100px;
   margin-bottom: 15px;
+  display: flex;
+}
+
+.role-icon {
+  height: 20px;
+  width: 20px;
+  margin-left: 10px;
+}
+
+.role-icon img {
+  height: 100%;
+  width: auto;
+}
+
+.second-role-icon {
+  height: 20px;
+  width: 20px;
+  margin-left: 5px;
+}
+
+.second-role-icon img {
+  height: 100%;
+  width: auto;
 }
 
 .tag-vert p {
