@@ -5,6 +5,7 @@ var titleBlocks = document.querySelectorAll(".block-vert-titles");
 var streamersBlocks = document.querySelectorAll(".block-vert-streamers");
 var partnerBlocks = document.querySelectorAll(".block-vert-partners");
 var shopBlocks = document.querySelectorAll(".block-vert-shop");
+var aboutContent = document.querySelectorAll(".about-content");
 
 document.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
@@ -69,6 +70,16 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
     shopBlocks.forEach((block, index) => {
+      setTimeout(() => {
+        block.classList.remove("inactive");
+      }, (index + 1) * 200);
+    });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
+    aboutContent.forEach((block, index) => {
       setTimeout(() => {
         block.classList.remove("inactive");
       }, (index + 1) * 200);
